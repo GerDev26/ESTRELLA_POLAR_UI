@@ -1,0 +1,49 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--white-color-800);
+
+  --main-color-950: #262c40;
+  --main-color-900: #414e6e;
+  --main-color-800: #4a5989;
+  --main-color-700: #6374ae;
+  --main-color-600: #6a7fc1;
+  --main-color-500: #839dd1;
+  --main-color-400: #9cb6dd;
+  --main-color-300: #b9cfe8;
+  --main-color-200: #d3e2f2;
+  --main-color-100: #e7f0f8;
+  --main-color-50: #f2f7fb;
+
+  --white-color-800: #e6e6e6;
+  --black-color-800: #1c1c1c;
+
+  --main-size: 8px;
+
+  --size-extra: calc(var(--main-size)*2);
+  --size-h5: calc(var(--main-size)*1);
+
+  --padding-size: calc(var(--main-size)*4);
+
+  --size-paragraph: calc(var(--main-size)*2);
+  --size-subtitle: calc(var(--main-size)*3);
+  --size-h2: calc(var(--main-size)*4);
+  --size-h1: calc(var(--main-size)*5);
+}
+
+h1{
+  font-size: var(--size-h1);
+  font-weight: bold;
+  color: var(--black-color-800);
+}
+h2{
+  font-size: var(--size-h2);
+  color: var(--black-color-800);
+}
+h3{
+  font-size: var(--size-subtitle);
+  color: var(--black-color-800);
+}
+p{
+  font-size: var(--size-paragraph);
+  color: var(--black-color-800);
+}
