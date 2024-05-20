@@ -5,7 +5,7 @@ body{
   margin: 0;
 }
 #root {
-  padding-inline: var(--padding-size);
+  padding-inline: 20px;
   width: 100%;
   min-height: 100vh;
 }

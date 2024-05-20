@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category": "Bolsos",
+        "img": "https://back.juanitajo.com/33414-thickbox_default/cartera-valeria-xl.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Cartucheras",
+        "img": "https://img.freepik.com/foto-gratis/estuche_1101-1127.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716076800&semt=sph"
+    },
+    {
+        "id": 3,
+        "category": "Mochilas",
+        "img": "https://img.freepik.com/foto-gratis/mochila-amarilla-mochila-escolar-sobre-fondo-verde-ia-generativa_123827-23977.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Riñoneras",
+        "img": "https://oportunidades-vip.com.ar/wp-content/uploads/2024/03/D_922550-MLA75429015833_032024-F.jpg"
+    }
+]

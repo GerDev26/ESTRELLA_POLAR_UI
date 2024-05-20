@@ -1,11 +1,11 @@
 import './App.css'
+import { ProductCard } from './components/ProductCard.jsx'
+import { ProductTypeGalery } from './components/ProductTypeGalery.jsx'
 export default function App(){
   return(
     <>
-    <h1>TEXT H1</h1>
-    <h2>Text h2</h2>
-    <h3>Text h3(subtitle)</h3>
-    <p>Paragraph</p>
+    <ProductCard></ProductCard>
+    <ProductTypeGalery></ProductTypeGalery>
     </>
   )
 }
