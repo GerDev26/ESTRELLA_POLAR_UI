@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "Cartera de Cuero",
+      "description": "Cartera de cuero genuino con múltiples compartimentos.",
+      "price": 75000,
+      "img": "https://mussleathers.com/wp-content/uploads/2021/06/Muss-Cuidado-Cartera.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bolso de Mano",
+      "description": "Bolso de mano elegante para ocasiones especiales.",
+      "price": 120000,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_690894-MLA72526735398_102023-O.webp"
+    },
+    {
+      "id": 3,
+      "title": "Cinturón de Cuero",
+      "description": "Cinturón de cuero con hebilla metálica.",
+      "price": 35000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGUqxB46Agr4Pzut6fziFYtRLqsvUsFKW0fFsVwDfBg&s"
+    },
+    {
+      "id": 4,
+      "title": "Portafolio",
+      "description": "Portafolio profesional de cuero para documentos.",
+      "price": 95000,
+      "img": "https://jeb.com.ar/imagenes/archivos/2022-08/382-portafolio_copahue_2-nuevo.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Monedero",
+      "description": "Monedero compacto de cuero con cierre seguro.",
+      "price": 20000,
+      "img": "https://ar.isadoraonline.com/media/catalog/product/4/2/42660401_0_1_20221103120321.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=985&width=770&canvas=770:985"
+    },
+    {
+      "id": 6,
+      "title": "Mochila de Cuero",
+      "description": "Mochila de cuero con múltiples compartimentos y diseño moderno.",
+      "price": 110000,
+      "img": "https://dorianargentina.com/wp-content/uploads/2023/12/mochila-cuero-hombre-frankfurt-marron-frente.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Llaveros de Cuero",
+      "description": "Set de llaveros de cuero personalizados.",
+      "price": 15000,
+      "img": "https://abaco.la/wp-content/uploads/2023/06/abaco-llavero-cuero-marron.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Zapatos de Cuero",
+      "description": "Zapatos de cuero hechos a mano para ocasiones formales.",
+      "price": 130000,
+      "img": "https://briganti.com.ar/cdn/shop/products/HCAC00969011-01.jpg?v=1640618170"
+    },
+    {
+      "id": 9,
+      "title": "Guantes de Cuero",
+      "description": "Guantes de cuero suaves y duraderos.",
+      "price": 45000,
+      "img": "https://arandu.com.ar/media/2020/06/07899S_web.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Funda para Laptop",
+      "description": "Funda protectora de cuero para laptop de hasta 15 pulgadas.",
+      "price": 50000,
+      "img": "https://mla-s1-p.mlstatic.com/613309-MLA54902852732_042023-F.jpg"
+    }
+  ]
+  

@@ -1,11 +1,12 @@
 import './App.css'
-import { ProductCard } from './components/ProductCard.jsx'
-import { ProductTypeGalery } from './components/ProductTypeGalery.jsx'
+import { Home } from './pages/Home'
+import { Route, Routes } from 'react-router'
 export default function App(){
   return(
     <>
-    <ProductCard></ProductCard>
-    <ProductTypeGalery></ProductTypeGalery>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+    </Routes>
     </>
   )
 }
