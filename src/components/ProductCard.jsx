@@ -1,8 +1,8 @@
 import { useRef } from 'react';
-import './ProductCard.css';
 import { useGalery } from '../hooks/useGalery';
 import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/16/solid';
 import products from './../mocks/products.json'
+import { Link } from 'react-router-dom';
 
 export function ProductCardGalery({text}) {
 
@@ -13,23 +13,46 @@ export function ProductCardGalery({text}) {
 
     return (
         <section ref={container} className='flex flex-col h-fit pt-14 w-full relative overflow-hidden'>
-            <h3 className='text-night-blue-main w-fit h-fit absolute top-4 left-0 text-2xl font-bold'>{text}</h3>
-            <button onClick={() => handleScroll('left')} className='w-fit h-fit absolute top-3 right-10'>
-                <ArrowLeftCircleIcon className='text-night-blue-main w-9 h-9'/>
+            <h3 className='text-night-blue-main w-fit h-fit absolute top-4 left-0 text-3xl font-bold'>{text}</h3>
+            <button onClick={() => handleScroll('left')} className='group w-fit h-fit absolute top-3 right-10'>
+                <ArrowLeftCircleIcon className='group-hover:text-night-blue-700 text-night-blue-950 w-9 h-9'/>
             </button>
-            <button onClick={() => handleScroll('right')} className='w-fit h-fit absolute top-3 right-0'>
-                <ArrowRightCircleIcon className='text-night-blue-main w-9 h-9'/>
+            <button onClick={() => handleScroll('right')} className='group w-fit h-fit absolute top-3 right-0'>
+                <ArrowRightCircleIcon className='group-hover:text-night-blue-700 text-night-blue-950 w-9 h-9'/>
             </button>
             <div style={transitionx} ref={galery} className='flex gap-3 relative w-fit'>
-                {products.map(product => <ProductCard key={product.id} product={product}/>)}
+                {products.map(product => <MainProductCard key={product.id} product={product}/>)}
             </div>
         </section>
     );
 }
 
-export function ProductCard({product}) {
+export function MainProductCard({ product }) {
+    const productRoute = "http://localhost:5173/" + product.id
+
     return (
-        <article className='product-card'>
+      <article className='flex flex-col w-60 h-90'>
+        <div className='group relative overflow-hidden w-60 h-60 mb-2'>
+          <img className="transition-transform duration-150 ease-in-out hover:scale-105 w-full h-full object-cover" src={product.img} alt={product.title} />
+          <span className='transition-all duration-150 ease-in-out group-hover:bottom-3 absolute bottom-1 left-1 rounded-md opacity-8q5 p-1 w-fit h-fit text-l text-night-blue-100 bg-night-blue-950'>
+            ${product.price}
+          </span>
+        </div>
+        <div className='h-20 w-full overflow-hidden'>
+          <h2 className='mb-1 text-l font-black text-night-blue-950 uppercase text-ellipsis overflow-hidden'>{product.title}</h2>
+          <p className='text-l font-thin text-night-blue-950 mb-3 text-ellipsis overflow-hidden'>{product.description}</p>
+        </div>
+        <Link to={productRoute} className='flex justify-center items-center w-full p-2 h-fit bg-night-blue-950 text-night-blue-50 hover:bg-night-blue-600 active:bg-night-blue-700 uppercase rounded-lg'>
+          ir al producto
+        </Link>
+      </article>
+    );
+  }
+
+export function ProductCard({product, className}) {
+    const style = className + " product-card"
+    return (
+        <article className={style}>
             <div className='relative'>
                 <img
                     className='w-full h-full object-cover'
@@ -47,3 +70,7 @@ export function ProductCard({product}) {
         </article>
     );
 }
+
+  
+  
+  
