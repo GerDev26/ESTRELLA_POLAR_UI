@@ -37,12 +37,12 @@ export function ProductCard({product}) {
                     alt={product.title}
                 />
             </div>
-            <div className='flex justify-between items-start p-3 gap-3 bg-night-blue-900'>
+            <div className='flex justify-between items-start p-2 gap-3 bg-night-blue-900'>
                 <div>
-                    <h4 className='uppercase text-night-blue-100 text-sm font-bold'>{product.title}</h4>
-                    <p className='text-night-blue-200 text-sm font-thin'>{product.description}</p>
+                    <h4 className='uppercase text-night-blue-100 text-base font-bold'>{product.title}</h4>
+                    <p className='text-night-blue-100 text-base font-thin'>{product.description}</p>
                 </div>
-                <h3 className='self-center text-night-blue-100 text-lg font-bold'>${product.price}</h3>
+                <h3 className='self-center text-night-blue-100 text-base font-bold'>${product.price}</h3>
             </div>
         </article>
     );

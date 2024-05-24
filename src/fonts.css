@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'BebasNeue';
+    src:  
+      url('./assets/fonts/bebas_neue/BebasNeue-Regular.woff') format('woff'),
+      url('./fonts/bebas_neue/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Jedi';
+    src:  
+      url('./assets/fonts/star_jedi/stjelogo/Strjmono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src:  
+      url('./assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Avengers';
+    src:  
+      url('./assets/fonts/avengeance/AVENGEANCEHEROICAVENGERBI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'BalanceGroovy';
+    src:  
+      url('./assets/fonts/balance_groovy/BalanceGroovySans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

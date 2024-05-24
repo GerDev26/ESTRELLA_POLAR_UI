@@ -21,11 +21,21 @@
     width: 100%;
     height: 100%;
 }
-.p-type-galery-item:first-child{
-    grid-row: 1/3;
+
+@media (max-width: 672px) {
+    .p-type-galery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80vh;
+    }
 }
-.p-type-galery-item:last-child{
-    grid-column: 2/4;
+@media (min-width: 672px) {
+    .p-type-galery-item:first-child{
+        grid-row: 1/3;
+    }
+    .p-type-galery-item:last-child{
+        grid-column: 2/4;
+    }
 }
 
 
