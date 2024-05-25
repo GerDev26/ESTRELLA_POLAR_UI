@@ -1,6 +1,7 @@
-export function MarginContainer({children}){
+export function MarginContainer({children, className}){
+    const style = "me-8 ms-8 " + className
     return(
-        <section className="me-8 ms-8">
+        <section className={style}>
             {children}
         </section>
     )

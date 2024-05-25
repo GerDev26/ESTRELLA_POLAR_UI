@@ -10,6 +10,10 @@ export function Footer(){
                 <SocialIcon url="https://www.instagram.com"/>
             </div>
             <img className="w-40 h-40 object-scale-down " src="../../public/img/estrellaPolarLogoBlanco.png" alt="" />
+            <div className="flex gap-2">
+                <h1>Todos los derechos reservados</h1>
+                <h1>Todos los derechos reservados</h1>
+            </div>
         </footer>
     )
 }

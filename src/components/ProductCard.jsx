@@ -28,7 +28,7 @@ export function ProductCardGalery({text}) {
 }
 
 export function MainProductCard({ product }) {
-    const productRoute = "http://localhost:5173/" + product.id
+    const productRoute = "http://localhost:5173/productos/" + product.id
 
     return (
       <article className='flex flex-col w-60 h-90'>
