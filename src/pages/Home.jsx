@@ -4,21 +4,21 @@ import { Footer } from "../components/Footer";
 import { DataCard } from "../components/Home/DataCard";
 import { ProductTypeGalery } from "../components/Home/ProductTypeGalery";
 import { MarginContainer } from "../components/MarginContainer";
+import { Navbar } from "../components/Navbar";
 import { ProductCardGalery } from "../components/ProductCard";
 
 import props from './../mocks/whyUs.json'
 
-console.log(window.location.pathname)
-
 export function Home(){
     return(
         <>
-        <section className="flex flex-col gap-5">
-            <BgVideoContainer className="flex flex-col justify-center items-center">
+        <Navbar/>
+        <section className="flex flex-col py-8 gap-5">
+{/*             <BgVideoContainer className="flex flex-col justify-center items-center">
                 <div className="w-6/12 h-fit z-10 opacity-90">
                     <img className="w-full h-full object-scale-down " src="../../public/img/estrellaPolarLogoBlanco.png" alt="" />
                 </div>
-            </BgVideoContainer>
+            </BgVideoContainer> */}
 
             <MarginContainer>
                 <ProductTypeGalery/>
