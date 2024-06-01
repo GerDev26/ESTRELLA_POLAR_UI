@@ -31,21 +31,20 @@ export function MainProductCard({ product }) {
     const productRoute = "http://localhost:5173/productos/" + product.id
 
     return (
-      <article className='flex flex-col w-60 h-90'>
-        <div className='group relative overflow-hidden w-60 h-60 mb-2'>
-          <img className="transition-transform duration-150 ease-in-out hover:scale-105 w-full h-full object-cover" src={product.img} alt={product.title} />
-          <span className='transition-all duration-150 ease-in-out group-hover:bottom-3 absolute bottom-1 left-1 rounded-md opacity-8q5 p-1 w-fit h-fit text-l text-night-blue-100 bg-night-blue-900'>
-            ${product.price}
-          </span>
-        </div>
-        <div className='h-20 w-full overflow-hidden'>
-          <h2 className='mb-1 text-l font-black text-night-blue-900 uppercase text-ellipsis overflow-hidden'>{product.title}</h2>
-          <p className='text-l font-thin text-night-blue-900 mb-3 text-ellipsis overflow-hidden'>{product.description}</p>
-        </div>
-        <Link to={productRoute} className='flex justify-center items-center w-full p-2 h-fit bg-night-blue-900 text-night-blue-50 hover:bg-night-blue-600 active:bg-night-blue-700 uppercase rounded-lg'>
-          ir al producto
-        </Link>
-      </article>
+      <Link to={productRoute}>
+        <article className='group flex flex-col w-56 h-fit'>
+          <div className='relative overflow-hidden w-full h-60 mb-2'>
+            <img className="transition-transform duration-150 ease-in-out group-hover:scale-105 w-full h-full object-cover" src={product.img} alt={product.title} />
+            <span className='transition-all opacity-90 duration-150 ease-in-out group-hover:bottom-3 absolute bottom-1 left-1 rounded-md opacity-8q5 p-1 w-fit h-fit text-l text-night-blue-100 bg-night-blue-900'>
+              ${product.price}
+            </span>
+          </div>
+          <div className='h-fit w-full overflow-hidden group-hover:underline'>
+            <h2 className='mb-1 text-l font-black text-night-blue-900 uppercase text-ellipsis overflow-hidden whitespace-nowrap'>{product.title}</h2>
+            <p className='text-l font-thin text-night-blue-900 mb-3 text-ellipsis overflow-hidden whitespace-nowrap'>{product.description}</p>
+          </div>
+        </article>
+      </Link>
     );
   }
 

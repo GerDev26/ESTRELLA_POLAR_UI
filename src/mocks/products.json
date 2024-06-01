@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Cartera de ¨ñasto",
+    "title": "Cartera de cuero",
     "description": "Cartera de cuero genuino con múltiples compartimentos. Ideal para llevar todas tus pertenencias de forma organizada y segura.",
     "price": 75000,
     "img": "https://mussleathers.com/wp-content/uploads/2021/06/Muss-Cuidado-Cartera.jpg",
     "stock": 23,
     "colors": ["1c1c1c", "5f5f5f"],
-    "characteristics": "Altura: 20cm\nAncho: 20cm\nProfundidad: 20cm\nExtras: Tiene como extra un compartimento especial para dispositivos electrónicos."
+    "characteristics": "Altura: 20cm\nAncho: 20cm\nProfundidad: 20cm\nExtras: Tiene como extra un compartimento especial para dispositivos electrónicos.",
+    "category": "otros"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "img": "https://http2.mlstatic.com/D_NQ_NP_690894-MLA72526735398_102023-O.webp",
     "stock": 17,
     "colors": ["d4af37", "8b4513"],
-    "characteristics": "Altura: 25cm\nAncho: 30cm\nProfundidad: 10cm\nExtras: Incluye una correa ajustable para mayor comodidad."
+    "characteristics": "Altura: 25cm\nAncho: 30cm\nProfundidad: 10cm\nExtras: Incluye una correa ajustable para mayor comodidad.",
+    "category": "urbano"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGUqxB46Agr4Pzut6fziFYtRLqsvUsFKW0fFsVwDfBg&s",
     "stock": 12,
     "colors": ["ff4500", "2e8b57"],
-    "characteristics": "Tallas disponibles: S, M, L\nMaterial: Cuero genuino\nExtras: Diseño reversible para versatilidad de estilo."
+    "characteristics": "Tallas disponibles: S, M, L\nMaterial: Cuero genuino\nExtras: Diseño reversible para versatilidad de estilo.",
+    "category": "otros"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "img": "https://jeb.com.ar/imagenes/archivos/2022-08/382-portafolio_copahue_2-nuevo.jpg",
     "stock": 30,
     "colors": ["4682b4", "696969"],
-    "characteristics": "Tamaño: A4\nMaterial: Cuero sintético de alta calidad\nExtras: Incluye múltiples compartimentos y portabolígrafos."
+    "characteristics": "Tamaño: A4\nMaterial: Cuero sintético de alta calidad\nExtras: Incluye múltiples compartimentos y portabolígrafos.",
+    "category": "escolar"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "img": "https://ar.isadoraonline.com/media/catalog/product/4/2/42660401_0_1_20221103120321.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=985&width=770&canvas=770:985",
     "stock": 9,
     "colors": ["8a2be2", "d2691e"],
-    "characteristics": "Dimensiones: 10cm x 8cm\nMaterial: Cuero sintético\nExtras: Cierre de botón a presión para mayor seguridad."
+    "characteristics": "Dimensiones: 10cm x 8cm\nMaterial: Cuero sintético\nExtras: Cierre de botón a presión para mayor seguridad.",
+    "category": "urbano"
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "img": "https://dorianargentina.com/wp-content/uploads/2023/12/mochila-cuero-hombre-frankfurt-marron-frente.jpg",
     "stock": 15,
     "colors": ["ff6347", "4682b4"],
-    "characteristics": "Capacidad: 20 litros\nMaterial: Cuero genuino\nExtras: Bolsillo acolchado para laptop y puerto de carga USB integrado."
+    "characteristics": "Capacidad: 20 litros\nMaterial: Cuero genuino\nExtras: Bolsillo acolchado para laptop y puerto de carga USB integrado.",
+    "category": "urbano"
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "img": "https://abaco.la/wp-content/uploads/2023/06/abaco-llavero-cuero-marron.jpg",
     "stock": 8,
     "colors": ["7fff00", "8b0000"],
-    "characteristics": "Cantidad: Set de 3 llaveros\nMaterial: Cuero genuino\nExtras: Personalización disponible con iniciales grabadas."
+    "characteristics": "Cantidad: Set de 3 llaveros\nMaterial: Cuero genuino\nExtras: Personalización disponible con iniciales grabadas.",
+    "category": "otros"
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "img": "https://briganti.com.ar/cdn/shop/products/HCAC00969011-01.jpg?v=1640618170",
     "stock": 25,
     "colors": ["f0e68c", "ff1493"],
-    "characteristics": "Tallas disponibles: 38-45\nMaterial: Cuero de alta calidad\nExtras: Suela de goma antideslizante para mayor comodidad."
+    "characteristics": "Tallas disponibles:38-45\nMaterial: Cuero de alta calidad\nExtras: Suela de goma antideslizante para mayor comodidad.",
+    "category": "urbano"
   },
   {
     "id": 9,
@@ -87,6 +95,131 @@
     "img": "https://arandu.com.ar/media/2020/06/07899S_web.jpg",
     "stock": 0,
     "colors": ["1e90ff", "dcdcdc"],
-    "characteristics": "Tallas disponibles: 38-45\nMaterial: Cuero de alta calidad\nExtras: Suela de goma antideslizante para mayor comodidad."
+    "characteristics": "Tallas disponibles: 38-45\nMaterial: Cuero de alta calidad\nExtras: Suela de goma antideslizante para mayor comodidad.",
+    "category": "otros"
+  },
+  {
+    "id": 10,
+    "title": "Chaqueta de Cuero",
+    "description": "Chaqueta de cuero auténtico con forro suave. Ideal para mantenerte abrigado y con estilo durante el invierno.",
+    "price": 200000,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_809543-MLA41634735796_052020-O.webp",
+    "stock": 20,
+    "colors": ["000000", "800000"],
+    "characteristics": "Tallas disponibles: S, M, L, XL\nMaterial: Cuero genuino\nExtras: Forro interior de lana para mayor calidez.",
+    "category": "otros"
+  },
+  {
+    "id": 11,
+    "title": "Billetera de Cuero",
+    "description": "Billetera de cuero compacta con múltiples compartimentos. Perfecta para llevar tus tarjetas y dinero en efectivo de forma organizada.",
+    "price": 50000,
+    "img": "https://acdn.mitiendanube.com/stores/003/429/444/products/diseno-sin-titulo-451-1cf2e57862f854419816928094671663-1024-1024.png",
+    "stock": 15,
+    "colors": ["4b0082", "2e8b57"],
+    "characteristics": "Dimensiones: 10cm x 8cm\nMaterial: Cuero genuino\nExtras: Compartimento para monedas con cierre de botón.",
+    "category": "otros"
+  },
+  {
+    "id": 12,
+    "title": "Bolso Cruzado",
+    "description": "Bolso cruzado de cuero para uso diario. Cómodo y práctico, perfecto para llevar tus pertenencias esenciales.",
+    "price": 85000,
+    "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/731bb19ef0cc46abadfdac8900a0c487_9366/Bolso_Cruzado_Essentials_Logo_Negro_GN1948_01_standard.jpg",
+    "stock": 18,
+    "colors": ["ff4500", "2e8b57"],
+    "characteristics": "Altura: 30cm\nAncho: 25cm\nProfundidad: 10cm\nExtras: Correa ajustable y múltiples compartimentos interiores.",
+    "category": "urbano"
+  },
+  {
+    "id": 13,
+    "title": "Botas de Cuero",
+    "description": "Botas de cuero resistentes para exteriores. Perfectas para aventuras y actividades al aire libre.",
+    "price": 160000,
+    "img": "https://dorianargentina.com/wp-content/uploads/2020/07/ValiantNegroA.jpg",
+    "stock": 10,
+    "colors": ["a52a2a", "000000"],
+    "characteristics": "Tallas disponibles: 40-46\nMaterial: Cuero de alta calidad\nExtras: Suela de goma antideslizante y resistente al agua.",
+    "category": "otros"
+  },
+  {
+    "id": 14,
+    "title": "Mochila de Viaje",
+    "description": "Mochila de viaje de cuero con gran capacidad. Ideal para viajes largos y aventuras, con múltiples compartimentos para una mejor organización.",
+    "price": 140000,
+    "img": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2022/06/28/62bad4d74982b.png",
+    "stock": 12,
+    "colors": ["ff6347", "4682b4"],
+    "characteristics": "Capacidad: 30 litros\nMaterial: Cuero genuino\nExtras: Compartimento acolchado para laptop y cinturón de sujeción.",
+    "category": "otros"
+  },
+  {
+    "id": 15,
+    "title": "Carcasa de Cuero para Teléfono",
+    "description": "Carcasa de cuero elegante para proteger tu teléfono. Compatible con múltiples modelos de smartphones.",
+    "price": 25000,
+    "img": "https://lh3.googleusercontent.com/proxy/UKBFQVaCPipWFZgF81r2JnqO0lTMINOeApw8ga6DyY54P9a1gXT3Xz8OYhpRnCk2MAgYWQO-rP61hFzORizHLd6WSG51OrTkLqhgP3sS78rcWS1B7yw",
+    "stock": 30,
+    "colors": ["000080", "ffd700"],
+    "characteristics": "Modelos compatibles: iPhone, Samsung, Huawei\nMaterial: Cuero genuino\nExtras: Bolsillo interior para tarjetas.",
+    "category": "otros"
+  },
+  {
+    "id": 16,
+    "title": "Cinturón de Vestir",
+    "description": "Cinturón de vestir de cuero con diseño clásico. Ideal para ocasiones formales y eventos especiales.",
+    "price": 45000,
+    "img": "https://acdn.mitiendanube.com/stores/001/976/919/products/cinto1-627ee296b3ee970f4f16420397083800-640-0.jpg",
+    "stock": 22,
+    "colors": ["696969", "8b4513"],
+    "characteristics": "Tallas disponibles: S, M, L\nMaterial: Cuero genuino\nExtras: Hebilla metálica resistente y ajustable.",
+    "category": "otros"
+  },
+  {
+    "id": 17,
+    "title": "Bolso Tote",
+    "description": "Bolso tote de cuero espacioso y versátil. Perfecto para llevar tus pertenencias diarias con estilo.",
+    "price": 95000,
+    "img": "https://s3.sa-east-1.amazonaws.com/www.vaypol.com.ar/variants/a2winz5melhmsg2mjgr45ihn70t4/c77c2a06864ac9aca38dc5bd9371de015471edcdbf322dfb14411689bf968ae5",
+    "stock": 14,
+    "colors": ["ff4500", "2e8b57"],
+    "characteristics": "Altura: 35cm\nAncho: 40cm\nProfundidad: 15cm\nExtras: Compartimento interior con cierre de cremallera.",
+    "category": "urbano"
+  },
+  {
+    "id": 18,
+    "title": "Sombrero de Cuero",
+    "description": "Sombrero de cuero con diseño clásico. Añade un toque de elegancia a tu atuendo con este sombrero de alta calidad.",
+    "price": 55000,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_705992-MLA74371163583_022024-O.webp",
+    "stock": 8,
+    "colors": ["800000", "2e8b57"],
+    "characteristics": "Tallas disponibles: S, M, L\nMaterial: Cuero genuino\nExtras: Banda interior ajustable para un ajuste perfecto.",
+    "category": "otros"
+  },
+  {
+    "id": 19,
+    "title": "Cartera de Tarjetas",
+    "description": "Cartera de cuero compacta para tarjetas. Ideal para llevar tus tarjetas y billetes de forma segura y organizada.",
+    "price": 30000,
+    "img": "https://www.zippo.es/cdn/shop/products/24285-01_large.jpg?v=1625798177",
+    "stock": 20,
+    "colors": ["4b0082", "8b4513"],
+    "characteristics": "Dimensiones: 8cm x 10cm\nMaterial: Cuero genuino\nExtras: Compartimento para monedas con cierre de botón.",
+    "category": "otros"
+  },
+  {
+    "id": 20,
+    "title": "Reloj de Pulsera de Cuero",
+    "description": "Reloj de pulsera con correa de cuero. Elegante y funcional, perfecto para el uso diario o para ocasiones especiales.",
+    "price": 75000,
+    "img": "https://acdn.mitiendanube.com/stores/001/288/975/products/dsc_0828o-6ccb7d5ca41f6d54e517090499493210-480-0.jpg",
+    "stock": 18,
+    "colors": ["000000", "d2691e"],
+    "characteristics": "Tamaño de la esfera: 40mm\nMaterial: Correa de cuero genuino\nExtras: Resistente al agua hasta 50m.",
+    "category": "otros"
   }
 ]
+
+ 
+
