@@ -1,5 +1,5 @@
 import { ProductColorsContainer } from "./ProductColors";
-import { ProductStockAmount, ProductStockState } from "./ProductStock";
+import { ProductAmount, ProductStockAmount, ProductStockState } from "./ProductStock";
 import { BuyBtn } from './../Buttons'
 
 export function ProductData({product}){
@@ -14,7 +14,7 @@ export function ProductData({product}){
                 <div className="flex justify-between items-center h-fit w-full">
 
                     <ProductStockState product={product}/>
-                    <ProductStockAmount product={product}/>
+                    <ProductAmount product={product}/>
                 </div>
                 <ProductColorsContainer product={product}/>
                 <div className="flex flex-col items-center gap-1">

@@ -1,10 +1,12 @@
 import { ArrowLeftIcon, Bars3Icon, MagnifyingGlassIcon, PlusIcon, ShoppingBagIcon, UserIcon, XMarkIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MediumInput, TinyInput } from "./Input";
+import { MediumInput } from "./Input";
 import { BuyBtn } from "./Buttons";
-import { ProductCardGalery } from "./ProductCard";
 import { SearchBar } from "./Filters/SearchBar";
+
+import products from './../mocks/products.json'
+import { MainProductCard, SearchProductCard } from "./ProductCard";
 
 export function MenuSection({state, callback, children}){
 
@@ -105,10 +107,15 @@ export function UserMenu({ state }){
 
 export function SearchMenu({state}){
 
+    const productsFormatted = products.slice(0, 5)
+
     const style = state ? "-translate-x-0" : "translate-x-full"
     return(
         <div className={"transition-all duration-300 fixed top-14 flex flex-col items-center w-full h-80 bg-white z-40 pt-4 " + style}>
             <SearchBar w="400px"/>
+            <div className="flex gap-4 w-fit my-4 overflow-hidden">
+                {productsFormatted.map(product => <SearchProductCard key={product.id} product={product}/>)}
+            </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import { CheckCircleIcon, ChevronDownIcon, ExclamationCircleIcon, XCircleIcon } from "@heroicons/react/16/solid";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export function ProductStockState({ product }) {
     let stockIcon = product.stock;
@@ -25,6 +25,7 @@ export function ProductStockState({ product }) {
         </div>
     );
 }
+
 export function ProductStockAmount({product}){
 
     let cantidad
@@ -58,5 +59,51 @@ export function ProductStockAmount({product}){
             ))}
             </ul>
         </div>
+    )
+}
+
+export function ProductAmount({ product }){
+    const [dropdownState, setDropdownState] = useState(false)
+    const [amount, setAmount] = useState(1)
+
+    const dropdown = dropdownState ? ' max-h-[1000px]' : ' max-h-0'
+    const toggleDropdown = () => {
+        setDropdownState(!dropdownState)
+    }
+
+    const handleSelect = (number) => {
+        setAmount(number)
+        setDropdownState(!dropdownState)
+    }
+
+    return(
+        <div className="relative">
+        <button onClick={toggleDropdown} className="flex flex-col w-24 px-2 py-1 border-2 border-night-blue-900 rounded-sm">
+            <div>
+                <p className="text-sm" >Cantidad</p>
+
+                <div className="flex w-full h-fit justify-between text-l">
+                    <p>{amount}</p>
+                    <ChevronDownIcon className="w-6 h-fit"/>
+                </div>
+            </div>
+        </button>
+        <div className={"transition-all ease-in-out duration-150 absolute top-[110%] flex flex-col gap-2 overflow-hidden w-24 bg-night-blue-100" + dropdown}>
+            <AmountItem value={1} callback={handleSelect}/>
+            <AmountItem value={2} callback={handleSelect}/>
+            <AmountItem value={3} callback={handleSelect}/>
+        </div>
+        </div>
+    )
+}
+
+function AmountItem({ value, callback }){
+    
+    const handleClick = () => {
+        callback(value)
+    }
+
+    return(
+        <p onClick={handleClick} className="w-full h-fit p-2 hover:bg-blue-200">{value}</p>
     )
 }

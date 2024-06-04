@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 export function ProductCardGalery({text}) {
 
+    const productsFormatted = products.slice(0,10)
+
     const galery = useRef();
     const container = useRef();
 
@@ -21,7 +23,7 @@ export function ProductCardGalery({text}) {
                 <ArrowRightCircleIcon className='group-hover:text-night-blue-700 text-night-blue-900 w-9 h-9'/>
             </button>
             <div style={transitionx} ref={galery} className='flex gap-3 relative w-fit'>
-                {products.map(product => <MainProductCard key={product.id} product={product}/>)}
+                {productsFormatted.map(product => <MainProductCard key={product.id} product={product}/>)}
             </div>
         </section>
     );
@@ -46,7 +48,25 @@ export function MainProductCard({ product }) {
         </article>
       </Link>
     );
-  }
+}
+
+export function SearchProductCard({ product }) {
+  const productRoute = "http://localhost:5173/productos/" + product.id
+
+  return (
+    <Link to={productRoute}>
+      <article className='group flex flex-col w-40 h-fit'>
+        <div className='relative overflow-hidden w-full h-40 mb-2'>
+          <img className="transition-transform duration-150 ease-in-out group-hover:scale-105 w-full h-full object-cover" src={product.img} alt={product.title} />
+        </div>
+        <div className='h-fit w-full overflow-hidden group-hover:underline text-l font-black text-night-blue-900 uppercase'>
+          <h2 className='mb-1'>{product.title}</h2>
+          <h2>${product.price}</h2>
+        </div>
+      </article>
+    </Link>
+  );
+}
 
 export function ProductCard({product, className}) {
     const style = className + " product-card"

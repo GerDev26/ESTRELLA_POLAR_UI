@@ -14,6 +14,7 @@ import { Filter } from "../components/Filters/Filter";
 
 
 export function Category(){
+
     return(
         <>
         <Navbar/>
@@ -48,7 +49,7 @@ export function Category(){
                     </div>
                 </nav>
 
-                <section className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-flow-col-7 h-fit w-fit m-auto gap-4 p-4">
+                <section className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 h-fit w-fit m-auto p-4">
                    {products.map(product => <MainProductCard key={product.id} product={product}/>)}
                 </section>
 

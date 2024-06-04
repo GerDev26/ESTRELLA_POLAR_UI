@@ -7,7 +7,6 @@ import products from '../mocks/products.json'
 
 
 export function CarProductCard({product}){
-
     const productColor = {
         backgroundColor: "#" + product.colors[1]
     }
@@ -33,7 +32,9 @@ export function CarProductCard({product}){
 
 export function OrderSummary(){
 
-    const precioTotal = products.reduce((acumulador, product) => {
+    const productsFormated = products.slice(0, 10)
+
+    const precioTotal = productsFormated.reduce((acumulador, product) => {
         return acumulador + product.price;
       }, 0);
     return(
@@ -41,15 +42,15 @@ export function OrderSummary(){
         <Navbar/>
         <section className="flex justify-around w-full gap-4 min-h-screen">
             <div className="w-7/12 flex flex-col gap-2 my-10 justify-start items-center">
-                {products.map(product => <CarProductCard key={product.id} product={product} />)}
+                {productsFormated.map(product => <CarProductCard key={product.id} product={product} />)}
             </div>        
 
             <div className="w-[2px] h-auto my-3 bg-gray-400"/>
 
-            <div className="sticky top-24 w-5/12 h-fit flex flex-col gap-4 items-center justify-center my-10 border-gray-300">
+            <div className="sticky top-32 w-5/12 h-fit flex flex-col gap-4 items-center justify-center my-10 border-gray-300">
                 <h3 className=" uppercase text-3xl">Resumen de compra</h3>
                 <div className="w-72">
-                    {products.map(product => (
+                    {productsFormated.map(product => (
                         <div key={product.id} className="flex justify-between">
                             <p>{product.title}</p>
                             <p className="font-bold">${product.price}</p>
